@@ -9,7 +9,7 @@ export default function ProductForm({ initialData, categories = [], onSubmit, on
         price: "",
         stock: "",
         category: "",
-        thumbnail: "", // Added Image URL field
+        thumbnail: "",
     });
 
     const [errors, setErrors] = useState({});
