@@ -1,36 +1,178 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Admin Dashboard
 
-## Getting Started
+A responsive **Product Admin Dashboard** built with **Next.js, React, Tailwind CSS, and Axios**. The application allows authenticated users to manage products using the **DummyJSON API**.
 
-First, run the development server:
+## Tech Stack
+
+* Next.js (App Router)
+* React.js
+* Tailwind CSS
+* Axios
+* JavaScript (ES6+)
+
+## Features
+
+### Authentication
+
+* User login using DummyJSON API
+* JWT token-based authentication
+* Protected routes
+* Logout functionality
+
+### Product Management
+
+* View all products
+* Responsive product table (Desktop)
+* Responsive product cards (Mobile)
+* Product details page
+* Add new product
+* Edit existing product
+* Delete product with confirmation
+
+### Search & Filter
+
+* Search products
+* Category filter
+* Sort by:
+
+  * Price
+  * Rating
+  * Title
+
+### Pagination
+
+* Previous / Next buttons
+* Page numbers
+* Page size selection (10, 20, 50)
+* Display current result count
+
+### UI Features
+
+* Loading spinner
+* Empty state
+* Error handling with Retry button
+* Responsive design
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── app/
+│   ├── login/
+│   ├── dashboard/
+│   ├── products/
+│   │   └── [id]/
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── ProductTable.jsx
+│   ├── ProductCard.jsx
+│   ├── Pagination.jsx
+│   ├── SearchBar.jsx
+│   ├── Loader.jsx
+│   └── ProductForm.jsx
+│
+├── services/
+│   ├── axios.js
+│   ├── authApi.js
+│   └── productApi.js
+│
+├── context/
+│   └── AuthContext.jsx
+│
+├── hooks/
+│
+└── utils/
+```
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/AdeshValekar/product-admin-dashboard
+```
+
+Go to the project folder
+
+```bash
+cd product-admin-dashboard
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Login Credentials
 
-## Learn More
+```text
+Username : emilys
+Password : emilyspass
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses the DummyJSON API.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Base URL
 
-## Deploy on Vercel
+```text
+https://dummyjson.com
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📋 Assignment Requirements Covered
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* User Authentication
+* Protected Routes
+* Shared Axios Instance
+* Product Listing
+* Product Details
+* Search
+* Pagination
+* Category Filter
+* Sorting
+* Add Product
+* Edit Product
+* Delete Product
+* Responsive UI
+* Loading State
+* Error State
+* Empty State
+
+## 📈 Future Improvements
+
+* Dark Mode
+* Better Form Validation
+* Toast Notifications
+* Unit Testing
+* Performance Optimization
+
+## 👨‍💻 Author
+
+**Adesh Valekar**
+
+GitHub: https://github.com/AdeshValekar
+
+LinkedIn: https://linkedin.com/in/adesh-valekar-2964a6255/
+
+---
+
+**Note:** This project is developed as a frontend assignment using the DummyJSON API. Some operations such as Add, Edit, and Delete are simulated by the API and are reflected only within the application state.
